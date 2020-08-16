@@ -1,0 +1,21 @@
+.container nav {
+    background-color :#c9c0bb;
+    color : white;
+    
+}
+
+a { 
+    display: block;
+    padding: 10px 10px;
+
+}
+
+.temperature {
+    display : flex;
+    flex-direction : column;
+    align-items: center;
+
+}
+* {
+    font-family : 'Raleway', sans-serif;
+}   
