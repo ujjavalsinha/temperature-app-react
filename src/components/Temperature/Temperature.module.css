@@ -1,0 +1,11 @@
+.container{
+    display: flex;
+    flex-direction : column;
+    padding: 10px 10px;
+    text-align: center;
+}
+
+.tempvalue h1 {
+    font-size : 100px;
+    text-align : center;
+}
