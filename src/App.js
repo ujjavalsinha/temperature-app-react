@@ -4,6 +4,7 @@ import './App.css';
 import styles from './App.module.css'
 import Temperature from './components/Temperature/Temperature';
 import CityPicker from './components/CityPicker/CityPicker';
+import image from './images/tempbackground.jpg';
 import { fetchTemperature } from './api'
 class App extends Component {
   state = { 
@@ -38,6 +39,7 @@ class App extends Component {
   render() { 
     return (
       <div className={styles.container}>
+        <div styles={{backgroundImage : `url(${image})`}}></div>
         <nav className="navbar navbar-expand-lg navbar-light">
             <a className="navbar-brand" href="#">Temperature</a>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
