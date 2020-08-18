@@ -4,12 +4,12 @@ import './App.css';
 import styles from './App.module.css'
 import Temperature from './components/Temperature/Temperature';
 import CityPicker from './components/CityPicker/CityPicker';
-import image from './images/tempbackground.jpg';
+
 import { fetchTemperature } from './api'
 class App extends Component {
   state = { 
     data : {},
-    city :'Mumbai',
+    city :'',
     celsius : true
    }
   handleSubmit=(event)=>{
@@ -39,29 +39,6 @@ class App extends Component {
   render() { 
     return (
       <div className={styles.container}>
-        <div styles={{backgroundImage : `url(${image})`}}></div>
-        <nav className="navbar navbar-expand-lg navbar-light">
-            <a className="navbar-brand" href="#">Temperature</a>
-            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span className="navbar-toggler-icon"></span>
-            </button>
-            <div className="collapse navbar-collapse" id="navbarNav">
-              <ul className="navbar-nav">
-                <li className="nav-item active">
-                  <a class="nav-link" href="!#">Home <span className="sr-only">(current)</span></a>
-                </li>
-                <li className="nav-item">
-                  <a class="nav-link" href="!#">Features</a>
-                </li>
-                <li className="nav-item">
-                  <a class="nav-link" href="!#">Pricing</a>
-                </li>
-                <li className="nav-item">
-                  <a class="nav-link" href="!#">About</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
           <div className={styles.temperature}>
           
             <Temperature data={this.state.data} celsius={this.state.celsius} handleCelsius={this.handleCelsius} handleFarenheit={this.handleFarenheit}/>

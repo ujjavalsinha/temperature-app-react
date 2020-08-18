@@ -8,4 +8,16 @@
 .tempvalue h1 {
     font-size : 100px;
     text-align : center;
+    color : white;
+}
+
+.nocity {
+    margin-top : 30px;
+    color : white;
+    margin-bottom : 30px;
+}
+
+button.btn {
+    border : 1px solid black;
+    border-radius : 30px;
 }

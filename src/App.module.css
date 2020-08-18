@@ -1,20 +1,23 @@
-.container nav {
-    background-color :#c9c0bb;
-    color : white;
-    
+body {
+    background: url(./images/weather.jpg) no-repeat center center fixed;
+    background-size :cover;
 }
 
 a { 
     display: block;
     padding: 10px 10px;
-
 }
 
 .temperature {
     display : flex;
     flex-direction : column;
     align-items: center;
-
+    
+    border : 2px solid white;
+    border-radius : 20px;
+    margin : 100px 33% auto 33%;
+    padding-bottom : 200px;
+    
 }
 * {
     font-family : 'Raleway', sans-serif;
