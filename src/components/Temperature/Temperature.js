@@ -18,7 +18,10 @@ const Temperature= ({ data, celsius,handleCelsius, handleFarenheit} ) =>{
                     <img>{data.weather.icon3}</img>
                 </div>
                 
-        : null)
+        : 
+        <div className={styles.nocity}>
+            <h1>Enter City Name</h1>
+        </div>)
     
     const changeCelsiusClass = () => {
         let buttonClass="btn btn-"

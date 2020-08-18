@@ -10,13 +10,13 @@ a.submit{
     padding : 5px 25px;
     border-radius : 10px;
     text-decoration-color : white;
-    background : #34e1eb;
-    
+    background : #262626;
+    color : white;
 }
 
 a.submit:hover{
-    background : #ebe134;
-    padding : 8px 30px;
+    padding : 6px 28px;
+    color : white;
 }
 
 .input {
